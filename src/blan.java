@@ -82,6 +82,7 @@
         m.information("Vainz", 2526106, "CT");
         m.setMathsMark(85);
         m.setPhysicsMark(90);
+
         m.setCSEMark(100);
         m.StudentMark(100);
         m.StudentMark(50, 58);
