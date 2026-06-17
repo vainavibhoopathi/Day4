@@ -16,11 +16,12 @@ public class Day10{
 
     static void removeStudent(LinkedList<Student> students) {
         System.out.println("Removed : " + students.removeLast().name);
+
     }
 
     static void updateStudent(LinkedList<Student> students) {
         for (Student s : students) {
-            if (s.name.equals("Deepa")) {
+            if (s.name.equals("Arun")) {
                 s.marks = 95; // Update marks from 85 to 95
             }
         }
