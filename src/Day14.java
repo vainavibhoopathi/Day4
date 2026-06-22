@@ -1,7 +1,7 @@
-public class Day14{
+public class Day14 {
     static class Student {
         String name;
-        int age;
+        String age;
         String regNo;
 
         Student(Builder builder) {
@@ -12,35 +12,36 @@ public class Day14{
 
         static class Builder {
             private String name;
-            private int age;
-            private int regNo;
-        }
+            private String age;
+            private String regNo;
 
-        public Builder name(String nameValue) {
-            this.name = nameValue;
-            return this;
-        }
 
-        public Builder age(int ageValue) {
-            this.age = ageValue;
-            return this;
-        }
+            public Builder name(String nameValue) {
+                this.name = nameValue;
+                return this;
+            }
 
-        public Builder regNo(String regNoValue) {
-            this.regNo = regNoValue;
-            return this;
-        }
+            public Builder age(String ageValue) {
+                this.age = ageValue;
+                return this;
+            }
 
-        public Student build() {
-            return new Student(this);
+            public Builder regNo(String regNoValue) {
+                this.regNo = regNoValue;
+                return this;
+            }
+
+            public Student build() {
+                return new Student(this);
+            }
         }
     }
-    }
-     static void main(){
-        Student builder=new Student.Builder()
+    static void main() {
+        Student student = new Student.Builder()
                 .name("Pravinza")
-                .age(18)
-                .regNO("2526K0689")
+                .age("18")
+                .regNo("2526K0689")
                 .build();
-        System.out.println(Student.name);
+        System.out.println(student.name);
     }
+}
